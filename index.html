@@ -46,30 +46,34 @@
               <div class="list-text">And much more!</div>
             </div>
           </div>
-
-          <div class="form-wrap">
-            Email address
-            <form>
+          <form name="emailAddress">
+            <div class="form-wrap">
+             <div class="validity"> 
+              <div id="Valid">Email address</div>
+              <div id="Invalid" class="invalid"> Valid email required</div>
+            </div>
               <input
                 autocomplete="off"
-                autofocus
                 placeholder="email@company.com"
+                id="email"
+                type="email"
+                name="Email"
               />
-            </form>
-          </div>
-          <div>
-            <a href="./success-page.html">
-              <div class="subscribe-wrap">Subscribe to monthly newsletter</div>
-            </a>
-          </div>
+            </div>
+            <div>
+                <button type="submit" class="subscribe-wrap">
+                  Subscribe to monthly newsletter
+                </button>            
+            </div>
+          </form>
         </div>
         <img
-        src="./assets/images/illustration-sign-up-desktop.svg"
-        alt="illustration"
-        class="desktop-picture"
-      />
-
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration"
+          class="desktop-picture"
+        />
       </div>
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>

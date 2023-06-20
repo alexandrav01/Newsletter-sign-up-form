@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+body{
+  margin: 0;
+  padding: 0;
+}
+
 a {
 color: white;
 text-decoration: none;
@@ -25,6 +30,18 @@ input{
     margin-top: 5px;
     padding: 10px;
 }
+
+input:invalid {
+  border: solid 1px hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 87%); 
+  color: hsl(4, 100%, 67%);
+}
+
+.invalid{
+  display: none;
+  color: hsl(4, 100%, 67%);
+}
+
 
 .intro-wrap {
   font-weight: 400;
@@ -68,6 +85,8 @@ input{
 .subscribe-wrap{
     background-color: hsl(234, 29%, 20%);
     height: 3rem;
+    width: 100%;
+    border: none;
     border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -79,7 +98,20 @@ input{
     font-weight: 700;
 }
 
+.validity{
+
+display: flex;
+justify-content: space-between;
+}
+
+
 @media only screen and (min-width:1300px){
+
+  body{
+    margin: 0;
+    padding: 0;
+}
+
     a {
     color: white;
     text-decoration: none;
@@ -118,6 +150,16 @@ input{
         border-radius: 5px;
         margin-top: 5px;
         padding: 10px;
+    }
+
+    input:invalid {
+      border: solid 1px red;
+      background-color: rgb(255, 210, 210);
+    }
+    
+    .invalid{
+      display: none;
+      color: hsl(4, 100%, 67%);
     }
     
     .intro-wrap {
