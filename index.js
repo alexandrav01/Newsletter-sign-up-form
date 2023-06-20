@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //open success page if input is valid
   document.querySelector("form").addEventListener("submit", function (event) {
-    window.open("success-page.html");
+    window.open("success-page.html", "_self");
     event.preventDefault();
     console.log(event);
   });
